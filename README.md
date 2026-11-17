@@ -4,11 +4,12 @@ ESP32-C3 SuperMini nightlight with LD2410C presence detection, BH1750 light sens
 
 ## First setup
 
-1. Power the lamp through USB-A. Join **Nightlight-xxxxxx** (no password); stay connected despite the “no internet” warning.
-2. Open **http://192.168.4.1**, select your **2.4 GHz Wi-Fi**, enter its password, and choose **Check connection and save**.
-3. After restart, rejoin your home Wi-Fi and open the displayed IP or `nightlight-xxxxxx.local`. If missing, find the IP in your router’s client list.
+The shipped lamp is already programmed and tested; no flashing is needed.
 
-If the lamp still has another network saved, hold **BOOT for 10 seconds while powered on**, then release to reopen setup.
+1. Power the lamp through USB-A. While powered on, **hold BOOT for 10 seconds, then release** to clear the previous Wi-Fi settings and open setup. Lamp and radar settings remain.
+2. Join **Nightlight-xxxxxx** (no password); stay connected despite the “no internet” warning.
+3. Open **http://192.168.4.1**, select your **2.4 GHz Wi-Fi**, enter its password, and choose **Check connection and save**.
+4. After restart, rejoin your home Wi-Fi and open the displayed IP or `nightlight-xxxxxx.local`. If missing, find the IP in your router’s client list.
 
 ## Manage
 
