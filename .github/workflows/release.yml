@@ -17,7 +17,7 @@ jobs:
           python-version: '3.11'
       - uses: arduino/setup-arduino-cli@v2
       - name: Verify version
-        run: test "$GITHUB_REF_NAME" = "v$(cat firmware/VERSION)"
+        run: python -c "import os,pathlib; assert os.environ['GITHUB_REF_NAME'] == 'v' + pathlib.Path('firmware/VERSION').read_text().strip()"
       - name: Install ESP32 core
         run: |
           arduino-cli core update-index --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json

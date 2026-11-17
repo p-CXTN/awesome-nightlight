@@ -1,6 +1,6 @@
 # Nightlight
 
-ESP32-C3 SuperMini nightlight with LD2410C presence detection, BH1750 light sensing, three LEDs, and a local web dashboard. Includes Rev K PCB, schematics, BOM, and firmware v1.0.2.
+ESP32-C3 SuperMini nightlight with LD2410C presence detection, BH1750 light sensing, three LEDs, and a local web dashboard. Includes Rev K PCB, schematics, BOM, and firmware.
 
 ## First setup
 
