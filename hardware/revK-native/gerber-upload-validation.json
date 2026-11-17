@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "input": "Gerber_Nightlight-PCB_2026-11-09.zip",
+  "input_sha256": "e74d766fd115e15ea4ae21ae3674407e73ebd8fadb744188af8acab1ccad6242",
+  "output": "Nightlight-RevK-JLC-Upload-2Layer.zip",
+  "output_sha256": "12f6fb898251a05a2d00cece72adee0a22d6386d2d8d2675f3e2075ea9a93352",
+  "copper_layers": 2,
+  "outline_mm": [
+    52,
+    52
+  ],
+  "plated_vias": {
+    "count": 61,
+    "diameter_mm": 0.3
+  },
+  "non_plated_holes": {
+    "count": 4,
+    "diameter_mm": 2.2
+  },
+  "removed_files": [
+    "Gerber_TopPasteMaskLayer.GTP",
+    "Gerber_BottomPasteMaskLayer.GBP",
+    "How-to-order-PCB.txt"
+  ],
+  "retained_files_sha256": {
+    "Gerber_TopLayer.GTL": "4f3594eab2f937305885c7ebf694456cefcdde5a4fef5abdcca1c0010fd0e9bb",
+    "Gerber_BottomLayer.GBL": "6fd6a629de9aca7de88b16f1fe8b68089764df1c6cec1806bbebda04a518f571",
+    "Gerber_TopSilkscreenLayer.GTO": "ff978fa2635fe89d153c415958201d4fc3a6c4c34623c69dc38edfa9f3278223",
+    "Gerber_BottomSilkscreenLayer.GBO": "f3ac7b6eb2884925e6ae11da2d566c1fe910e6eac7e0886264705aac3202176e",
+    "Gerber_TopSolderMaskLayer.GTS": "3889da2b58c2ffe36b3412a64409d359643946b936a094af15a51de03fad09ea",
+    "Gerber_BottomSolderMaskLayer.GBS": "6bf8470666e5603e55a36b3e02d1b2147c39a31dca9021db1ff408bf4798ad56",
+    "Gerber_BoardOutlineLayer.GKO": "6f02aa1b8a1939ac65539ad722aae6b29d01a66ce7a631f948f8b85e0555b457",
+    "Drill_PTH_Through.DRL": "f16a7a601fb208dd3ed0a97b9daecf29903af47e8b7c9f7a943d7419735e4d5a",
+    "Drill_NPTH_Through.DRL": "3d039b8083b758ebbce4df10a3d494080bcc203f765782e0aff9a581588e9b77",
+    "Drill_PTH_Through_Via.DRL": "2ab2199a145e0383853bbbc1d8969fcb802d7ffa64c7758ff9582114346b06d4",
+    "FlyingProbeTesting.json": "46bbc1886ad0dc48efe5200f4dcfe14ec20727a8b564862572698aed7e546839"
+  },
+  "checks": [
+    "All retained files byte-identical to JLCEDA export",
+    "Top and bottom copper match Rev K geometry within 0.0001 mm comparison tolerance",
+    "Outline is closed 52 x 52 mm rectangle",
+    "All drill coordinates and diameters match Rev K",
+    "Vendor via-specific drill file duplicates the plated via set and is retained for JLC tooling",
+    "Solder-mask flashes match component pad and mounting-hole positions",
+    "Flying-probe pad positions, sides and connected-net partitions match Rev K",
+    "ZIP integrity verified"
+  ],
+  "limitations": [
+    "No fabrication order submitted",
+    "Review factory production drawing before confirming manufacture"
+  ]
+}

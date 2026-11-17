@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "component_count": 24,
+  "pad_count": 73,
+  "net_count": 20,
+  "track_count": 102,
+  "via_count": 61,
+  "minimum_different_net_copper_clearance_mm": 0.2111,
+  "checks": [
+    "Native schematic wire/label connectivity matches every PCB pad",
+    "All connected PCB nets form continuous copper graphs",
+    "Different-net copper clearance >= 0.20 mm",
+    "No copper inside RF and trimmed-data-pin reservations",
+    "Copper-to-board edge >= 0.20 mm",
+    "Copper-to-mounting-hole edge >= 0.20 mm",
+    "Mounting holes clear full module, land and graphic bounding envelopes by >=0.75 mm",
+    "All drill pairs, including same-net vias, have >= 0.30 mm edge clearance",
+    "Four serialized non-plated mechanical holes have diameter 2.20 mm",
+    "PCB semantic Name text equals schematic component value for every device",
+    "SuperMini 16 mm row spacing, 2.54 mm pitch and 1.6 mm end offset; lands extend beyond module edges",
+    "GY-302 measured outline, row offset and VCC end margin",
+    "USB polarity follows solder-end photo; 7.2 mm power span; no D+/D- copper pads",
+    "Router reports zero unrouted connections",
+    "USB-A centered on both axes; LED centres equally spaced and symmetric",
+    "Exactly two copper-layer definitions; no empty inner-copper layers",
+    "All three module carrier connections and discretes use front SMD lands; only USB uses rear lands",
+    "Rear non-ground copper clears USB shell contact bands by >=0.20 mm"
+  ],
+  "errors": [],
+  "limitations": [
+    "Independent geometric checks, not JLCEDA native DRC",
+    "Radar edge offset and ESP antenna extent remain approximate; LED footprint retained without physical measurement",
+    "Independent checks do not validate fabrication exports",
+    "Native import may require property-only Channel ID synchronization; confirm in JLCEDA"
+  ],
+  "module_envelope_to_mounting_hole_clearance_mm": {
+    "U1": 5.1074,
+    "U2": 0.8276,
+    "U3": 6.6469
+  },
+  "minimum_drill_edge_clearance_mm": 0.6823,
+  "mechanical_hole_diameters_mm": [
+    2.2,
+    2.2,
+    2.2,
+    2.2
+  ],
+  "artifact_sha256": {
+    "Nightlight-PCB.json": "5b2a30fc4c78410357d610d8c7a330dda03530bb03faa9e15f8b4135f8e3d0dd",
+    "Nightlight-Schematic.json": "0b471764135f013650366fbdcd90ac6ea9d560cd7395d1627f2b2afe6d60293a",
+    "design-model.json": "d1765389c45ff17cabc0bbe09a506d2e6c0f317d5fa6783de1670243dd4ebc10",
+    "routes.json": "006ac9187793cbbd1b23bdf453a66e6f886339df3db89b834993bfcb50ad56a3"
+  }
+}

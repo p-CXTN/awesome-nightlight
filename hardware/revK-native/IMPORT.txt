@@ -1,0 +1,111 @@
+NIGHTLIGHT REV K
+
+LAYOUT
+52 x 52 x 1.6 mm square carrier, two copper layers.
+All three modules and every resistor, capacitor, MOSFET and LED mount on the
+front. The USB-A connector is the only rear-mounted component.
+Coordinates below are front views, with the three LEDs along the bottom edge.
+Four 2.2 mm non-plated locating holes: (3,3), (49,3), (3,49), (49,49).
+
+IMPORT AND FABRICATION
+JLCEDA Professional: Import JLCEDA (Standard), select
+Nightlight-RevK-JLCEDA-Standard.zip and extract its embedded libraries.
+JLCEDA Standard: open Nightlight-Schematic.json and Nightlight-PCB.json.
+Import as a new project. Synchronize the schematic and PCB, inspect changes,
+and run native ERC/DRC. Native Channel IDs may need assignment after import.
+Review solder mask and silkscreen, export Gerber/drill files, and inspect the
+fabrication preview. The project ZIP is not a Gerber fabrication ZIP.
+
+FRONT-SIDE MODULE SOLDERING
+U1 uses exposed side-solder lands. U2 and U3 have closed module holes and use
+short formed leads to exposed carrier lands. They do not use carrier through
+holes. Both the module joint and carrier joint are soldered from the front.
+Use ten individually formed, approximately 0.5 mm diameter tinned solid-wire
+links, five per sensor. Their paths must not cross neighboring contacts.
+Support modules at the specified height while soldering. Do not substitute a
+straight through-hole header or bury unsoldered joints beneath the modules.
+
+SUPERMINI U1
+Body 18 x 22.4 mm at (27.4,21). Component face outward; USB-C toward top.
+Module thickness 4.0 mm; nominal underside solder separation 0.2 mm.
+Hole rows x=28.4 and 44.4 mm, pitch 2.54 mm. USB-end hole row y=22.6 mm.
+Carrier pads 3.6 x 1.5 mm, extending 0.8 mm beyond each module side edge.
+Front-view LEFT row, top to bottom:
+GPIO5, GPIO6, GPIO7, GPIO8, GPIO9, GPIO10, GPIO20, GPIO21.
+Front-view RIGHT row:
+5V, GND, 3V3, GPIO4, GPIO3, GPIO2, GPIO1, GPIO0.
+Pin numbering is retained with the module rotated 180 degrees in the PCB plane.
+USB-C projects 1.3 mm beyond the upper module edge, within the carrier outline.
+Program before final assembly; verify the chosen USB-C cable clears nearby
+components before soldering U1. For later wired programming,
+ensure the USB-C connector is accessible. Disconnect USB-A first.
+
+RADAR U2
+LD2410C nominal body 22 x 16 mm at (3.4,7.5), antenna face outward.
+Module holes x=9.32 + n*2.54, y=9.0 mm. Left to right: TX, RX, OUT, GND, VCC.
+Carrier lands are above the module at the same x positions, y=5.8 mm.
+Mounting holes clear the full module-and-land bounding rectangle by >=0.75 mm.
+Case supports clear the full radar outline by >=2.0 mm in plan view.
+The entire underside component envelope remains reserved beneath the radar.
+Hi-Link manual V1.00 specifies 2.54 mm pitch and 0.9 mm module holes.
+The 1.5 mm hole-row edge offset is approximate physical measurement.
+Module PCB underside: 1.8 mm above carrier front. This allows 1.5 mm underside
+component projection plus 0.3 mm clearance. PCB thickness 1.6 mm; front
+components project 0.9 mm. Antenna plane is 3.4 mm above carrier front.
+Form leads outward over the upper module edge. Keep their upper envelope
+within 4.75 mm of the carrier front; do not run leads across the antenna.
+
+LIGHT SENSOR U3
+GY-302 body 18.7 x 14.2 mm at (3.4,27). Component face outward, header RIGHT.
+The module is rotated 180 degrees relative to the earlier left-header layout.
+Right-hand module holes: x=21.1 mm; top-to-bottom VCC, GND, SCL, SDA, ADDR;
+y=29.2 + n*2.54 mm. VCC edge margin 2.20 mm; ADDR margin 1.84 mm.
+Carrier lands are at x=23.5 mm with matching y positions.
+Use 0.3 mm underside separation; module total thickness is 2.1 mm.
+Form leads outward over the right edge, maximum envelope 2.95 mm above carrier.
+The sensor centre is approximately 6.8 mm from the left board edge; the case
+aperture spans the module height to accommodate its other unspecified coordinate.
+U3 uses +5V input and its onboard regulator/3.3V I2C pull-ups as before.
+
+USB J1
+Rear shell centre (26,26), cross-section 12 x 4.5 mm.
+Solder-end reference-photo orientation matches the PCB front projection:
+left outer contact +5V at (22.4,26); right outer contact GND at (29.6,26).
+Power lands: 1.8 x 2.6 mm. Grounded shell lands: 3 x 3 mm, centres (19,26)
+and (33,26). Straighten and fit shell legs to the broad exposed lands.
+Trim D-/D+ contacts. Rear copper and vias are excluded from x=24..28,
+y=24.3..27.7 mm. Front-only SMD copper may lie beneath this region, separated
+from the trimmed contacts by the 1.6 mm carrier. Trimmed tails must not lift
+the connector or extend outside the reserved rear region.
+Rear non-ground copper clears the shell-rim contact bands by at least 0.20 mm.
+Preserve those bands when editing. Rear copper-fill cutouts mark the rim.
+Board-rear-surface to tip: 18.7..18.8 mm. Case projection: 15.7..15.8 mm.
+
+LED CIRCUIT
+Three independent channels are retained: GPIO10, GPIO0 and GPIO1.
+Each uses an AO3400A, 470R LED resistor, 220R gate resistor and 10k pulldown.
+LED bodies and land patterns remain the existing 3.20 x 2.47 mm design.
+Physical LED fit has not been measured. LED centres are (14.5,46.735), (26,46.735), (37.5,46.735) mm,
+with equal 11.5 mm horizontal spacing and symmetric side margins.
+All original electrical pin/net assignments are retained; physical positions
+and module orientations are defined by this revision's footprint map.
+
+CHECKS AND LIMITS
+check_placement.py checks pad placement, copper reservations and board edges.
+validate.py checks serialized native connectivity, all pin/net assignments,
+0.20 mm copper clearance, 0.30 mm drill clearance, measured module geometry,
+the front-side assembly constraint, and rear USB contact reservations.
+These checks do not replace native ERC/DRC, mask review or physical assembly.
+The ESP antenna envelope, radar row offset and hand-formed lead shapes remain
+approximate. RF performance, optical isolation and printed fit are unqualified.
+
+REBUILD IN THE PROJECT TREE
+python build.py
+python check_placement.py
+python route.py
+python build.py
+python validate.py
+python render.py
+python screenshot_local.py
+routing-order.json records the selected routing priorities.
+find_route.py searches alternative priorities.

@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: arduino/setup-arduino-cli@v2
+      - name: Verify version
+        run: test "$GITHUB_REF_NAME" = "v$(cat firmware/VERSION)"
+      - name: Install ESP32 core
+        run: |
+          arduino-cli core update-index --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
+          arduino-cli core install esp32:esp32@3.3.6 --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
+      - name: Build and check firmware
+        run: |
+          python scripts/build.py
+          python scripts/check.py
+          python scripts/package_hardware.py
+      - name: Create draft and upload assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" --verify-tag --draft --title "Nightlight $GITHUB_REF_NAME" --notes-file .github/release-notes.md
+          gh release upload "$GITHUB_REF_NAME" firmware/images/*.bin firmware/images/*.zip firmware/images/release.json firmware/images/SHA256SUMS
+          gh release edit "$GITHUB_REF_NAME" --draft=false

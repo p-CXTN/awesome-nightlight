@@ -1,0 +1,5 @@
+Pillow>=10.1
+numpy
+scipy
+shapely>=2
+playwright

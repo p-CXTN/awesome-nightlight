@@ -1,0 +1,2905 @@
+{
+  "board": [
+    52,
+    52
+  ],
+  "module_holes": {
+    "U2": [
+      {
+        "num": "1",
+        "x": 9.32,
+        "y": 9.0
+      },
+      {
+        "num": "2",
+        "x": 11.86,
+        "y": 9.0
+      },
+      {
+        "num": "3",
+        "x": 14.4,
+        "y": 9.0
+      },
+      {
+        "num": "4",
+        "x": 16.94,
+        "y": 9.0
+      },
+      {
+        "num": "5",
+        "x": 19.48,
+        "y": 9.0
+      }
+    ],
+    "U3": [
+      {
+        "num": "1",
+        "x": 21.1,
+        "y": 29.2
+      },
+      {
+        "num": "2",
+        "x": 21.1,
+        "y": 31.74
+      },
+      {
+        "num": "3",
+        "x": 21.1,
+        "y": 34.28
+      },
+      {
+        "num": "4",
+        "x": 21.1,
+        "y": 36.82
+      },
+      {
+        "num": "5",
+        "x": 21.1,
+        "y": 39.36
+      }
+    ]
+  },
+  "rf_keepouts": [
+    [
+      3,
+      11.5,
+      26.4,
+      23.9
+    ],
+    [
+      30.4,
+      36.4,
+      42.4,
+      43.4
+    ]
+  ],
+  "data_pin_keepout": [
+    24,
+    24.3,
+    28,
+    27.7
+  ],
+  "layer_keepouts": [
+    {
+      "layer": 2,
+      "rect": [
+        24,
+        24.3,
+        28,
+        27.7
+      ],
+      "purpose": "trimmed USB data tails"
+    }
+  ],
+  "shell_contact_bands": [
+    [
+      19.65,
+      23.4,
+      32.35,
+      24.1
+    ],
+    [
+      19.65,
+      27.9,
+      32.35,
+      28.6
+    ],
+    [
+      19.65,
+      23.4,
+      20.35,
+      28.6
+    ],
+    [
+      31.65,
+      23.4,
+      32.35,
+      28.6
+    ]
+  ],
+  "components": {
+    "U1": {
+      "ref": "U1",
+      "value": "ESP32-C3 SuperMini",
+      "pins": [
+        {
+          "number": "1",
+          "name": "5V",
+          "net": "+5V"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "3V3",
+          "net": "+3V3"
+        },
+        {
+          "number": "4",
+          "name": "GPIO4",
+          "net": "I2C_SDA"
+        },
+        {
+          "number": "5",
+          "name": "GPIO3",
+          "net": "RADAR_OUT"
+        },
+        {
+          "number": "6",
+          "name": "GPIO2",
+          "net": null
+        },
+        {
+          "number": "7",
+          "name": "GPIO1",
+          "net": "LED3_PWM"
+        },
+        {
+          "number": "8",
+          "name": "GPIO0",
+          "net": "LED2_PWM"
+        },
+        {
+          "number": "9",
+          "name": "GPIO5",
+          "net": "I2C_SCL"
+        },
+        {
+          "number": "10",
+          "name": "GPIO6",
+          "net": "RADAR_TX"
+        },
+        {
+          "number": "11",
+          "name": "GPIO7",
+          "net": "RADAR_RX"
+        },
+        {
+          "number": "12",
+          "name": "GPIO8",
+          "net": null
+        },
+        {
+          "number": "13",
+          "name": "GPIO9",
+          "net": null
+        },
+        {
+          "number": "14",
+          "name": "GPIO10",
+          "net": "LED1_PWM"
+        },
+        {
+          "number": "15",
+          "name": "GPIO20",
+          "net": null
+        },
+        {
+          "number": "16",
+          "name": "GPIO21",
+          "net": null
+        }
+      ],
+      "package": "SuperMini_18x22.4_SIDE_SOLDER",
+      "side": 1,
+      "id": "ggeNL_U1",
+      "uuid": "febcafeedf715b88a6d1389a36ecfaba",
+      "puuid": "9a3ce7c54ef8507ea79bf08afd88b3e2"
+    },
+    "U2": {
+      "ref": "U2",
+      "value": "LD2410C",
+      "pins": [
+        {
+          "number": "1",
+          "name": "TX",
+          "net": "RADAR_TX"
+        },
+        {
+          "number": "2",
+          "name": "RX",
+          "net": "RADAR_RX"
+        },
+        {
+          "number": "3",
+          "name": "OUT",
+          "net": "RADAR_OUT"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "VCC",
+          "net": "+5V"
+        }
+      ],
+      "package": "LD2410C_FRONT_FORMED_LEADS",
+      "side": 1,
+      "id": "ggeNL_U2",
+      "uuid": "fa754b05bbfd525eab0c37a7fe7bc8c7",
+      "puuid": "c55b801b84a2572f949eee3b75441d4d"
+    },
+    "U3": {
+      "ref": "U3",
+      "value": "GY-302 / BH1750",
+      "pins": [
+        {
+          "number": "1",
+          "name": "VCC",
+          "net": "+5V"
+        },
+        {
+          "number": "2",
+          "name": "GND",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "SCL",
+          "net": "I2C_SCL"
+        },
+        {
+          "number": "4",
+          "name": "SDA",
+          "net": "I2C_SDA"
+        },
+        {
+          "number": "5",
+          "name": "ADDR",
+          "net": "GND"
+        }
+      ],
+      "package": "GY302_FRONT_FORMED_LEADS",
+      "side": 1,
+      "id": "ggeNL_U3",
+      "uuid": "be867c17833e573598df642f2944c201",
+      "puuid": "3711d7b6f8915df49e4bb17077631fd9"
+    },
+    "J1": {
+      "ref": "J1",
+      "value": "USB-A male / rear",
+      "pins": [
+        {
+          "number": "1",
+          "name": "VBUS",
+          "net": "+5V"
+        },
+        {
+          "number": "4",
+          "name": "GND",
+          "net": "GND"
+        },
+        {
+          "number": "5",
+          "name": "SH1",
+          "net": "GND"
+        },
+        {
+          "number": "6",
+          "name": "SH2",
+          "net": "GND"
+        }
+      ],
+      "package": "USB_A_END_SOLDER",
+      "side": 2,
+      "id": "ggeNL_J1",
+      "uuid": "f7a6a59867e75500b71a93354a590fc8",
+      "puuid": "2ad0b891d8ec594a9dbf5e282a1e3192"
+    },
+    "Q1": {
+      "ref": "Q1",
+      "value": "AO3400A",
+      "pins": [
+        {
+          "number": "1",
+          "name": "G",
+          "net": "LED1_GATE"
+        },
+        {
+          "number": "2",
+          "name": "S",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "D",
+          "net": "LED1_RETURN"
+        }
+      ],
+      "package": "SOT23_G1_S2_D3",
+      "side": 1,
+      "id": "ggeNL_Q1",
+      "uuid": "43fb40b154e455878227476f49919216",
+      "puuid": "d364e3c9758059c7b5fd032dc30b8cd0"
+    },
+    "Q2": {
+      "ref": "Q2",
+      "value": "AO3400A",
+      "pins": [
+        {
+          "number": "1",
+          "name": "G",
+          "net": "LED2_GATE"
+        },
+        {
+          "number": "2",
+          "name": "S",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "D",
+          "net": "LED2_RETURN"
+        }
+      ],
+      "package": "SOT23_G1_S2_D3",
+      "side": 1,
+      "id": "ggeNL_Q2",
+      "uuid": "31cd10eb5a1c5afcb877cc28ebdbe154",
+      "puuid": "d364e3c9758059c7b5fd032dc30b8cd0"
+    },
+    "Q3": {
+      "ref": "Q3",
+      "value": "AO3400A",
+      "pins": [
+        {
+          "number": "1",
+          "name": "G",
+          "net": "LED3_GATE"
+        },
+        {
+          "number": "2",
+          "name": "S",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "name": "D",
+          "net": "LED3_RETURN"
+        }
+      ],
+      "package": "SOT23_G1_S2_D3",
+      "side": 1,
+      "id": "ggeNL_Q3",
+      "uuid": "5fefc6b9bd5b5816b0169573d6967395",
+      "puuid": "d364e3c9758059c7b5fd032dc30b8cd0"
+    },
+    "R1": {
+      "ref": "R1",
+      "value": "470R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "+5V"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "LED1_A"
+        }
+      ],
+      "package": "R0805",
+      "side": 1,
+      "id": "ggeNL_R1",
+      "uuid": "4ed2ebb434d05c16b447e44042c1768e",
+      "puuid": "59952daef7f25d2991a233db6f0d7ce3"
+    },
+    "R2": {
+      "ref": "R2",
+      "value": "470R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "+5V"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "LED2_A"
+        }
+      ],
+      "package": "R0805",
+      "side": 1,
+      "id": "ggeNL_R2",
+      "uuid": "c4a7bdda63f35e5989a2f4b2a32e65cc",
+      "puuid": "59952daef7f25d2991a233db6f0d7ce3"
+    },
+    "R3": {
+      "ref": "R3",
+      "value": "220R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "LED1_PWM"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "LED1_GATE"
+        }
+      ],
+      "package": "R0805",
+      "side": 1,
+      "id": "ggeNL_R3",
+      "uuid": "66e3e8f47bff5a45999f493324f74ecd",
+      "puuid": "59952daef7f25d2991a233db6f0d7ce3"
+    },
+    "R4": {
+      "ref": "R4",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "LED1_GATE"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND"
+        }
+      ],
+      "package": "R0805",
+      "side": 1,
+      "id": "ggeNL_R4",
+      "uuid": "9af0179b7d9655f08a561dc0c2370899",
+      "puuid": "59952daef7f25d2991a233db6f0d7ce3"
+    },
+    "R7": {
+      "ref": "R7",
+      "value": "220R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "LED2_PWM"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "LED2_GATE"
+        }
+      ],
+      "package": "R0805",
+      "side": 1,
+      "id": "ggeNL_R7",
+      "uuid": "25df486c9a6b5e6fad59e595461c1471",
+      "puuid": "59952daef7f25d2991a233db6f0d7ce3"
+    },
+    "R8": {
+      "ref": "R8",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "LED2_GATE"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND"
+        }
+      ],
+      "package": "R0805",
+      "side": 1,
+      "id": "ggeNL_R8",
+      "uuid": "cadef377956857159b9b174e62799f8e",
+      "puuid": "59952daef7f25d2991a233db6f0d7ce3"
+    },
+    "R9": {
+      "ref": "R9",
+      "value": "470R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "+5V"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "LED3_A"
+        }
+      ],
+      "package": "R0805",
+      "side": 1,
+      "id": "ggeNL_R9",
+      "uuid": "f05d39484d58569f9fe95a2b089127d8",
+      "puuid": "59952daef7f25d2991a233db6f0d7ce3"
+    },
+    "R10": {
+      "ref": "R10",
+      "value": "220R",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "LED3_PWM"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "LED3_GATE"
+        }
+      ],
+      "package": "R0805",
+      "side": 1,
+      "id": "ggeNL_R10",
+      "uuid": "5ccfe056c49d53ab9890881977d069b9",
+      "puuid": "59952daef7f25d2991a233db6f0d7ce3"
+    },
+    "R11": {
+      "ref": "R11",
+      "value": "10k",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "LED3_GATE"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND"
+        }
+      ],
+      "package": "R0805",
+      "side": 1,
+      "id": "ggeNL_R11",
+      "uuid": "50b6aa87c04d58c394d8aba513edbe71",
+      "puuid": "59952daef7f25d2991a233db6f0d7ce3"
+    },
+    "C1": {
+      "ref": "C1",
+      "value": "10uF 16V",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "+5V"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND"
+        }
+      ],
+      "package": "C0805",
+      "side": 1,
+      "id": "ggeNL_C1",
+      "uuid": "657d1b8594ab58d58650a3fdd54fd7c8",
+      "puuid": "d1fa777810b95c96b5ccf412dabd5711"
+    },
+    "C2": {
+      "ref": "C2",
+      "value": "100nF 50V",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "+5V"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND"
+        }
+      ],
+      "package": "C0805",
+      "side": 1,
+      "id": "ggeNL_C2",
+      "uuid": "cd72d7863e40540f90d6bfc58865c3ea",
+      "puuid": "d1fa777810b95c96b5ccf412dabd5711"
+    },
+    "C3": {
+      "ref": "C3",
+      "value": "10uF 16V",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "+5V"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND"
+        }
+      ],
+      "package": "C0805",
+      "side": 1,
+      "id": "ggeNL_C3",
+      "uuid": "bf204c10e9b55608b9fe4de0c655555b",
+      "puuid": "d1fa777810b95c96b5ccf412dabd5711"
+    },
+    "C4": {
+      "ref": "C4",
+      "value": "100nF 50V",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "+5V"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND"
+        }
+      ],
+      "package": "C0805",
+      "side": 1,
+      "id": "ggeNL_C4",
+      "uuid": "7c39eb23de115d50872cc35804d0f3d0",
+      "puuid": "d1fa777810b95c96b5ccf412dabd5711"
+    },
+    "C5": {
+      "ref": "C5",
+      "value": "100nF 50V",
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "net": "+5V"
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "net": "GND"
+        }
+      ],
+      "package": "C0805",
+      "side": 1,
+      "id": "ggeNL_C5",
+      "uuid": "12261a4578b35daba505849461ebebb8",
+      "puuid": "d1fa777810b95c96b5ccf412dabd5711"
+    },
+    "D1": {
+      "ref": "D1",
+      "value": "Warm white",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "net": "LED1_A"
+        },
+        {
+          "number": "2",
+          "name": "K",
+          "net": "LED1_RETURN"
+        }
+      ],
+      "package": "LED_3.20x2.47_PROVISIONAL",
+      "side": 1,
+      "id": "ggeNL_D1",
+      "uuid": "e8190cc132e458c99330609a1f08eeaf",
+      "puuid": "ac273f4092545666887b58836edc5bf7"
+    },
+    "D2": {
+      "ref": "D2",
+      "value": "Warm white",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "net": "LED2_A"
+        },
+        {
+          "number": "2",
+          "name": "K",
+          "net": "LED2_RETURN"
+        }
+      ],
+      "package": "LED_3.20x2.47_PROVISIONAL",
+      "side": 1,
+      "id": "ggeNL_D2",
+      "uuid": "63552eb6d0bb521fa1fe16cfc0148906",
+      "puuid": "ac273f4092545666887b58836edc5bf7"
+    },
+    "D3": {
+      "ref": "D3",
+      "value": "Warm white",
+      "pins": [
+        {
+          "number": "1",
+          "name": "A",
+          "net": "LED3_A"
+        },
+        {
+          "number": "2",
+          "name": "K",
+          "net": "LED3_RETURN"
+        }
+      ],
+      "package": "LED_3.20x2.47_PROVISIONAL",
+      "side": 1,
+      "id": "ggeNL_D3",
+      "uuid": "1f66e844d3ea544fac129dad38659bef",
+      "puuid": "ac273f4092545666887b58836edc5bf7"
+    }
+  },
+  "footprints": {
+    "U1": {
+      "x": 27.4,
+      "y": 21,
+      "w": 18,
+      "h": 22.4,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "U1",
+          "num": "1",
+          "x": 44.4,
+          "y": 22.6,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "+5V",
+          "name": "5V"
+        },
+        {
+          "ref": "U1",
+          "num": "9",
+          "x": 28.4,
+          "y": 22.6,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "I2C_SCL",
+          "name": "GPIO5"
+        },
+        {
+          "ref": "U1",
+          "num": "2",
+          "x": 44.4,
+          "y": 25.14,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "GND"
+        },
+        {
+          "ref": "U1",
+          "num": "10",
+          "x": 28.4,
+          "y": 25.14,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "RADAR_TX",
+          "name": "GPIO6"
+        },
+        {
+          "ref": "U1",
+          "num": "3",
+          "x": 44.4,
+          "y": 27.68,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "+3V3",
+          "name": "3V3"
+        },
+        {
+          "ref": "U1",
+          "num": "11",
+          "x": 28.4,
+          "y": 27.68,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "RADAR_RX",
+          "name": "GPIO7"
+        },
+        {
+          "ref": "U1",
+          "num": "4",
+          "x": 44.4,
+          "y": 30.220000000000002,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "I2C_SDA",
+          "name": "GPIO4"
+        },
+        {
+          "ref": "U1",
+          "num": "12",
+          "x": 28.4,
+          "y": 30.220000000000002,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "",
+          "name": "GPIO8"
+        },
+        {
+          "ref": "U1",
+          "num": "5",
+          "x": 44.4,
+          "y": 32.760000000000005,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "RADAR_OUT",
+          "name": "GPIO3"
+        },
+        {
+          "ref": "U1",
+          "num": "13",
+          "x": 28.4,
+          "y": 32.760000000000005,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "",
+          "name": "GPIO9"
+        },
+        {
+          "ref": "U1",
+          "num": "6",
+          "x": 44.4,
+          "y": 35.3,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "",
+          "name": "GPIO2"
+        },
+        {
+          "ref": "U1",
+          "num": "14",
+          "x": 28.4,
+          "y": 35.3,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED1_PWM",
+          "name": "GPIO10"
+        },
+        {
+          "ref": "U1",
+          "num": "7",
+          "x": 44.4,
+          "y": 37.84,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED3_PWM",
+          "name": "GPIO1"
+        },
+        {
+          "ref": "U1",
+          "num": "15",
+          "x": 28.4,
+          "y": 37.84,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "",
+          "name": "GPIO20"
+        },
+        {
+          "ref": "U1",
+          "num": "8",
+          "x": 44.4,
+          "y": 40.38,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED2_PWM",
+          "name": "GPIO0"
+        },
+        {
+          "ref": "U1",
+          "num": "16",
+          "x": 28.4,
+          "y": 40.38,
+          "w": 3.6,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "",
+          "name": "GPIO21"
+        }
+      ]
+    },
+    "U2": {
+      "x": 3.4,
+      "y": 7.5,
+      "w": 22,
+      "h": 16,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "U2",
+          "num": "1",
+          "x": 9.32,
+          "y": 5.8,
+          "w": 1.8,
+          "h": 1.8,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "RADAR_TX",
+          "name": "TX"
+        },
+        {
+          "ref": "U2",
+          "num": "2",
+          "x": 11.86,
+          "y": 5.8,
+          "w": 1.8,
+          "h": 1.8,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "RADAR_RX",
+          "name": "RX"
+        },
+        {
+          "ref": "U2",
+          "num": "3",
+          "x": 14.4,
+          "y": 5.8,
+          "w": 1.8,
+          "h": 1.8,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "RADAR_OUT",
+          "name": "OUT"
+        },
+        {
+          "ref": "U2",
+          "num": "4",
+          "x": 16.94,
+          "y": 5.8,
+          "w": 1.8,
+          "h": 1.8,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "GND"
+        },
+        {
+          "ref": "U2",
+          "num": "5",
+          "x": 19.48,
+          "y": 5.8,
+          "w": 1.8,
+          "h": 1.8,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "+5V",
+          "name": "VCC"
+        }
+      ]
+    },
+    "U3": {
+      "x": 3.4,
+      "y": 27,
+      "w": 18.7,
+      "h": 14.2,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "U3",
+          "num": "1",
+          "x": 23.5,
+          "y": 29.2,
+          "w": 1.8,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "+5V",
+          "name": "VCC"
+        },
+        {
+          "ref": "U3",
+          "num": "2",
+          "x": 23.5,
+          "y": 31.74,
+          "w": 1.8,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "GND"
+        },
+        {
+          "ref": "U3",
+          "num": "3",
+          "x": 23.5,
+          "y": 34.28,
+          "w": 1.8,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "I2C_SCL",
+          "name": "SCL"
+        },
+        {
+          "ref": "U3",
+          "num": "4",
+          "x": 23.5,
+          "y": 36.82,
+          "w": 1.8,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "I2C_SDA",
+          "name": "SDA"
+        },
+        {
+          "ref": "U3",
+          "num": "5",
+          "x": 23.5,
+          "y": 39.36,
+          "w": 1.8,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "ADDR"
+        }
+      ]
+    },
+    "J1": {
+      "x": 20,
+      "y": 23.75,
+      "w": 12,
+      "h": 4.5,
+      "side": 2,
+      "pads": [
+        {
+          "ref": "J1",
+          "num": "1",
+          "x": 22.4,
+          "y": 26,
+          "w": 1.8,
+          "h": 2.6,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 2,
+          "net": "+5V",
+          "name": "VBUS"
+        },
+        {
+          "ref": "J1",
+          "num": "4",
+          "x": 29.6,
+          "y": 26,
+          "w": 1.8,
+          "h": 2.6,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 2,
+          "net": "GND",
+          "name": "GND"
+        },
+        {
+          "ref": "J1",
+          "num": "5",
+          "x": 19,
+          "y": 26,
+          "w": 3,
+          "h": 3,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 2,
+          "net": "GND",
+          "name": "SH1"
+        },
+        {
+          "ref": "J1",
+          "num": "6",
+          "x": 33,
+          "y": 26,
+          "w": 3,
+          "h": 3,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 2,
+          "net": "GND",
+          "name": "SH2"
+        }
+      ]
+    },
+    "Q1": {
+      "x": 29.5,
+      "y": 9.0,
+      "w": 3,
+      "h": 3,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "Q1",
+          "num": "1",
+          "x": 30,
+          "y": 9.5,
+          "w": 0.95,
+          "h": 0.6,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED1_GATE",
+          "name": "G"
+        },
+        {
+          "ref": "Q1",
+          "num": "2",
+          "x": 30,
+          "y": 11.5,
+          "w": 0.95,
+          "h": 0.6,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "S"
+        },
+        {
+          "ref": "Q1",
+          "num": "3",
+          "x": 32,
+          "y": 10.5,
+          "w": 0.95,
+          "h": 0.6,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED1_RETURN",
+          "name": "D"
+        }
+      ]
+    },
+    "Q2": {
+      "x": 35.5,
+      "y": 9.0,
+      "w": 3,
+      "h": 3,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "Q2",
+          "num": "1",
+          "x": 36,
+          "y": 9.5,
+          "w": 0.95,
+          "h": 0.6,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED2_GATE",
+          "name": "G"
+        },
+        {
+          "ref": "Q2",
+          "num": "2",
+          "x": 36,
+          "y": 11.5,
+          "w": 0.95,
+          "h": 0.6,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "S"
+        },
+        {
+          "ref": "Q2",
+          "num": "3",
+          "x": 38,
+          "y": 10.5,
+          "w": 0.95,
+          "h": 0.6,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED2_RETURN",
+          "name": "D"
+        }
+      ]
+    },
+    "Q3": {
+      "x": 41.5,
+      "y": 9.0,
+      "w": 3,
+      "h": 3,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "Q3",
+          "num": "1",
+          "x": 42,
+          "y": 9.5,
+          "w": 0.95,
+          "h": 0.6,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED3_GATE",
+          "name": "G"
+        },
+        {
+          "ref": "Q3",
+          "num": "2",
+          "x": 42,
+          "y": 11.5,
+          "w": 0.95,
+          "h": 0.6,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "S"
+        },
+        {
+          "ref": "Q3",
+          "num": "3",
+          "x": 44,
+          "y": 10.5,
+          "w": 0.95,
+          "h": 0.6,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED3_RETURN",
+          "name": "D"
+        }
+      ]
+    },
+    "R1": {
+      "x": 13.5,
+      "y": 43.875,
+      "w": 2,
+      "h": 1.25,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "R1",
+          "num": "1",
+          "x": 13.35,
+          "y": 44.5,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "+5V",
+          "name": "1"
+        },
+        {
+          "ref": "R1",
+          "num": "2",
+          "x": 15.65,
+          "y": 44.5,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED1_A",
+          "name": "2"
+        }
+      ]
+    },
+    "R2": {
+      "x": 25,
+      "y": 43.875,
+      "w": 2,
+      "h": 1.25,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "R2",
+          "num": "1",
+          "x": 24.85,
+          "y": 44.5,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "+5V",
+          "name": "1"
+        },
+        {
+          "ref": "R2",
+          "num": "2",
+          "x": 27.15,
+          "y": 44.5,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED2_A",
+          "name": "2"
+        }
+      ]
+    },
+    "R9": {
+      "x": 36.5,
+      "y": 43.875,
+      "w": 2,
+      "h": 1.25,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "R9",
+          "num": "1",
+          "x": 36.35,
+          "y": 44.5,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "+5V",
+          "name": "1"
+        },
+        {
+          "ref": "R9",
+          "num": "2",
+          "x": 38.65,
+          "y": 44.5,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED3_A",
+          "name": "2"
+        }
+      ]
+    },
+    "R3": {
+      "x": 29,
+      "y": 13.175,
+      "w": 2,
+      "h": 1.25,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "R3",
+          "num": "1",
+          "x": 28.85,
+          "y": 13.8,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED1_PWM",
+          "name": "1"
+        },
+        {
+          "ref": "R3",
+          "num": "2",
+          "x": 31.15,
+          "y": 13.8,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED1_GATE",
+          "name": "2"
+        }
+      ]
+    },
+    "R4": {
+      "x": 29,
+      "y": 15.675,
+      "w": 2,
+      "h": 1.25,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "R4",
+          "num": "1",
+          "x": 28.85,
+          "y": 16.3,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED1_GATE",
+          "name": "1"
+        },
+        {
+          "ref": "R4",
+          "num": "2",
+          "x": 31.15,
+          "y": 16.3,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "2"
+        }
+      ]
+    },
+    "R7": {
+      "x": 35,
+      "y": 13.175,
+      "w": 2,
+      "h": 1.25,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "R7",
+          "num": "1",
+          "x": 34.85,
+          "y": 13.8,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED2_PWM",
+          "name": "1"
+        },
+        {
+          "ref": "R7",
+          "num": "2",
+          "x": 37.15,
+          "y": 13.8,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED2_GATE",
+          "name": "2"
+        }
+      ]
+    },
+    "R8": {
+      "x": 35,
+      "y": 15.675,
+      "w": 2,
+      "h": 1.25,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "R8",
+          "num": "1",
+          "x": 34.85,
+          "y": 16.3,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED2_GATE",
+          "name": "1"
+        },
+        {
+          "ref": "R8",
+          "num": "2",
+          "x": 37.15,
+          "y": 16.3,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "2"
+        }
+      ]
+    },
+    "R10": {
+      "x": 41,
+      "y": 13.175,
+      "w": 2,
+      "h": 1.25,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "R10",
+          "num": "1",
+          "x": 40.85,
+          "y": 13.8,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED3_PWM",
+          "name": "1"
+        },
+        {
+          "ref": "R10",
+          "num": "2",
+          "x": 43.15,
+          "y": 13.8,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED3_GATE",
+          "name": "2"
+        }
+      ]
+    },
+    "R11": {
+      "x": 41,
+      "y": 15.675,
+      "w": 2,
+      "h": 1.25,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "R11",
+          "num": "1",
+          "x": 40.85,
+          "y": 16.3,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED3_GATE",
+          "name": "1"
+        },
+        {
+          "ref": "R11",
+          "num": "2",
+          "x": 43.15,
+          "y": 16.3,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "2"
+        }
+      ]
+    },
+    "C1": {
+      "x": 24.875,
+      "y": 40.2,
+      "w": 1.25,
+      "h": 2,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "C1",
+          "num": "1",
+          "x": 25.5,
+          "y": 40.050000000000004,
+          "w": 1.5,
+          "h": 1.3,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "+5V",
+          "name": "1"
+        },
+        {
+          "ref": "C1",
+          "num": "2",
+          "x": 25.5,
+          "y": 42.35,
+          "w": 1.5,
+          "h": 1.3,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "2"
+        }
+      ]
+    },
+    "C2": {
+      "x": 24.875,
+      "y": 36.3,
+      "w": 1.25,
+      "h": 2,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "C2",
+          "num": "1",
+          "x": 25.5,
+          "y": 36.15,
+          "w": 1.5,
+          "h": 1.3,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "+5V",
+          "name": "1"
+        },
+        {
+          "ref": "C2",
+          "num": "2",
+          "x": 25.5,
+          "y": 38.449999999999996,
+          "w": 1.5,
+          "h": 1.3,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "2"
+        }
+      ]
+    },
+    "C3": {
+      "x": 22,
+      "y": 4.375,
+      "w": 2,
+      "h": 1.25,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "C3",
+          "num": "1",
+          "x": 21.85,
+          "y": 5,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "+5V",
+          "name": "1"
+        },
+        {
+          "ref": "C3",
+          "num": "2",
+          "x": 24.15,
+          "y": 5,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "2"
+        }
+      ]
+    },
+    "C4": {
+      "x": 26,
+      "y": 4.375,
+      "w": 2,
+      "h": 1.25,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "C4",
+          "num": "1",
+          "x": 25.85,
+          "y": 5,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "+5V",
+          "name": "1"
+        },
+        {
+          "ref": "C4",
+          "num": "2",
+          "x": 28.15,
+          "y": 5,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "2"
+        }
+      ]
+    },
+    "C5": {
+      "x": 23,
+      "y": 25.175,
+      "w": 2,
+      "h": 1.25,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "C5",
+          "num": "1",
+          "x": 22.85,
+          "y": 25.8,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "+5V",
+          "name": "1"
+        },
+        {
+          "ref": "C5",
+          "num": "2",
+          "x": 25.15,
+          "y": 25.8,
+          "w": 1.3,
+          "h": 1.5,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "GND",
+          "name": "2"
+        }
+      ]
+    },
+    "D1": {
+      "x": 12.9,
+      "y": 45.5,
+      "w": 3.2,
+      "h": 2.47,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "D1",
+          "num": "1",
+          "x": 13.35,
+          "y": 46.735,
+          "w": 1.3,
+          "h": 1.9,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED1_A",
+          "name": "A"
+        },
+        {
+          "ref": "D1",
+          "num": "2",
+          "x": 15.2,
+          "y": 46.735,
+          "w": 1.9,
+          "h": 1.9,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED1_RETURN",
+          "name": "K"
+        }
+      ]
+    },
+    "D2": {
+      "x": 24.4,
+      "y": 45.5,
+      "w": 3.2,
+      "h": 2.47,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "D2",
+          "num": "1",
+          "x": 24.849999999999998,
+          "y": 46.735,
+          "w": 1.3,
+          "h": 1.9,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED2_A",
+          "name": "A"
+        },
+        {
+          "ref": "D2",
+          "num": "2",
+          "x": 26.7,
+          "y": 46.735,
+          "w": 1.9,
+          "h": 1.9,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED2_RETURN",
+          "name": "K"
+        }
+      ]
+    },
+    "D3": {
+      "x": 35.9,
+      "y": 45.5,
+      "w": 3.2,
+      "h": 2.47,
+      "side": 1,
+      "pads": [
+        {
+          "ref": "D3",
+          "num": "1",
+          "x": 36.35,
+          "y": 46.735,
+          "w": 1.3,
+          "h": 1.9,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED3_A",
+          "name": "A"
+        },
+        {
+          "ref": "D3",
+          "num": "2",
+          "x": 38.199999999999996,
+          "y": 46.735,
+          "w": 1.9,
+          "h": 1.9,
+          "drill": 0,
+          "shape": "RECT",
+          "layer": 1,
+          "net": "LED3_RETURN",
+          "name": "K"
+        }
+      ]
+    }
+  },
+  "pads": [
+    {
+      "ref": "U1",
+      "num": "1",
+      "x": 44.4,
+      "y": 22.6,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "+5V",
+      "name": "5V"
+    },
+    {
+      "ref": "U1",
+      "num": "9",
+      "x": 28.4,
+      "y": 22.6,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "I2C_SCL",
+      "name": "GPIO5"
+    },
+    {
+      "ref": "U1",
+      "num": "2",
+      "x": 44.4,
+      "y": 25.14,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "GND"
+    },
+    {
+      "ref": "U1",
+      "num": "10",
+      "x": 28.4,
+      "y": 25.14,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "RADAR_TX",
+      "name": "GPIO6"
+    },
+    {
+      "ref": "U1",
+      "num": "3",
+      "x": 44.4,
+      "y": 27.68,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "+3V3",
+      "name": "3V3"
+    },
+    {
+      "ref": "U1",
+      "num": "11",
+      "x": 28.4,
+      "y": 27.68,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "RADAR_RX",
+      "name": "GPIO7"
+    },
+    {
+      "ref": "U1",
+      "num": "4",
+      "x": 44.4,
+      "y": 30.220000000000002,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "I2C_SDA",
+      "name": "GPIO4"
+    },
+    {
+      "ref": "U1",
+      "num": "12",
+      "x": 28.4,
+      "y": 30.220000000000002,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "",
+      "name": "GPIO8"
+    },
+    {
+      "ref": "U1",
+      "num": "5",
+      "x": 44.4,
+      "y": 32.760000000000005,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "RADAR_OUT",
+      "name": "GPIO3"
+    },
+    {
+      "ref": "U1",
+      "num": "13",
+      "x": 28.4,
+      "y": 32.760000000000005,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "",
+      "name": "GPIO9"
+    },
+    {
+      "ref": "U1",
+      "num": "6",
+      "x": 44.4,
+      "y": 35.3,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "",
+      "name": "GPIO2"
+    },
+    {
+      "ref": "U1",
+      "num": "14",
+      "x": 28.4,
+      "y": 35.3,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED1_PWM",
+      "name": "GPIO10"
+    },
+    {
+      "ref": "U1",
+      "num": "7",
+      "x": 44.4,
+      "y": 37.84,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED3_PWM",
+      "name": "GPIO1"
+    },
+    {
+      "ref": "U1",
+      "num": "15",
+      "x": 28.4,
+      "y": 37.84,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "",
+      "name": "GPIO20"
+    },
+    {
+      "ref": "U1",
+      "num": "8",
+      "x": 44.4,
+      "y": 40.38,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED2_PWM",
+      "name": "GPIO0"
+    },
+    {
+      "ref": "U1",
+      "num": "16",
+      "x": 28.4,
+      "y": 40.38,
+      "w": 3.6,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "",
+      "name": "GPIO21"
+    },
+    {
+      "ref": "U2",
+      "num": "1",
+      "x": 9.32,
+      "y": 5.8,
+      "w": 1.8,
+      "h": 1.8,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "RADAR_TX",
+      "name": "TX"
+    },
+    {
+      "ref": "U2",
+      "num": "2",
+      "x": 11.86,
+      "y": 5.8,
+      "w": 1.8,
+      "h": 1.8,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "RADAR_RX",
+      "name": "RX"
+    },
+    {
+      "ref": "U2",
+      "num": "3",
+      "x": 14.4,
+      "y": 5.8,
+      "w": 1.8,
+      "h": 1.8,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "RADAR_OUT",
+      "name": "OUT"
+    },
+    {
+      "ref": "U2",
+      "num": "4",
+      "x": 16.94,
+      "y": 5.8,
+      "w": 1.8,
+      "h": 1.8,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "GND"
+    },
+    {
+      "ref": "U2",
+      "num": "5",
+      "x": 19.48,
+      "y": 5.8,
+      "w": 1.8,
+      "h": 1.8,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "+5V",
+      "name": "VCC"
+    },
+    {
+      "ref": "U3",
+      "num": "1",
+      "x": 23.5,
+      "y": 29.2,
+      "w": 1.8,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "+5V",
+      "name": "VCC"
+    },
+    {
+      "ref": "U3",
+      "num": "2",
+      "x": 23.5,
+      "y": 31.74,
+      "w": 1.8,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "GND"
+    },
+    {
+      "ref": "U3",
+      "num": "3",
+      "x": 23.5,
+      "y": 34.28,
+      "w": 1.8,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "I2C_SCL",
+      "name": "SCL"
+    },
+    {
+      "ref": "U3",
+      "num": "4",
+      "x": 23.5,
+      "y": 36.82,
+      "w": 1.8,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "I2C_SDA",
+      "name": "SDA"
+    },
+    {
+      "ref": "U3",
+      "num": "5",
+      "x": 23.5,
+      "y": 39.36,
+      "w": 1.8,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "ADDR"
+    },
+    {
+      "ref": "J1",
+      "num": "1",
+      "x": 22.4,
+      "y": 26,
+      "w": 1.8,
+      "h": 2.6,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 2,
+      "net": "+5V",
+      "name": "VBUS"
+    },
+    {
+      "ref": "J1",
+      "num": "4",
+      "x": 29.6,
+      "y": 26,
+      "w": 1.8,
+      "h": 2.6,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 2,
+      "net": "GND",
+      "name": "GND"
+    },
+    {
+      "ref": "J1",
+      "num": "5",
+      "x": 19,
+      "y": 26,
+      "w": 3,
+      "h": 3,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 2,
+      "net": "GND",
+      "name": "SH1"
+    },
+    {
+      "ref": "J1",
+      "num": "6",
+      "x": 33,
+      "y": 26,
+      "w": 3,
+      "h": 3,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 2,
+      "net": "GND",
+      "name": "SH2"
+    },
+    {
+      "ref": "Q1",
+      "num": "1",
+      "x": 30,
+      "y": 9.5,
+      "w": 0.95,
+      "h": 0.6,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED1_GATE",
+      "name": "G"
+    },
+    {
+      "ref": "Q1",
+      "num": "2",
+      "x": 30,
+      "y": 11.5,
+      "w": 0.95,
+      "h": 0.6,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "S"
+    },
+    {
+      "ref": "Q1",
+      "num": "3",
+      "x": 32,
+      "y": 10.5,
+      "w": 0.95,
+      "h": 0.6,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED1_RETURN",
+      "name": "D"
+    },
+    {
+      "ref": "Q2",
+      "num": "1",
+      "x": 36,
+      "y": 9.5,
+      "w": 0.95,
+      "h": 0.6,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED2_GATE",
+      "name": "G"
+    },
+    {
+      "ref": "Q2",
+      "num": "2",
+      "x": 36,
+      "y": 11.5,
+      "w": 0.95,
+      "h": 0.6,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "S"
+    },
+    {
+      "ref": "Q2",
+      "num": "3",
+      "x": 38,
+      "y": 10.5,
+      "w": 0.95,
+      "h": 0.6,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED2_RETURN",
+      "name": "D"
+    },
+    {
+      "ref": "Q3",
+      "num": "1",
+      "x": 42,
+      "y": 9.5,
+      "w": 0.95,
+      "h": 0.6,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED3_GATE",
+      "name": "G"
+    },
+    {
+      "ref": "Q3",
+      "num": "2",
+      "x": 42,
+      "y": 11.5,
+      "w": 0.95,
+      "h": 0.6,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "S"
+    },
+    {
+      "ref": "Q3",
+      "num": "3",
+      "x": 44,
+      "y": 10.5,
+      "w": 0.95,
+      "h": 0.6,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED3_RETURN",
+      "name": "D"
+    },
+    {
+      "ref": "R1",
+      "num": "1",
+      "x": 13.35,
+      "y": 44.5,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "+5V",
+      "name": "1"
+    },
+    {
+      "ref": "R1",
+      "num": "2",
+      "x": 15.65,
+      "y": 44.5,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED1_A",
+      "name": "2"
+    },
+    {
+      "ref": "R2",
+      "num": "1",
+      "x": 24.85,
+      "y": 44.5,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "+5V",
+      "name": "1"
+    },
+    {
+      "ref": "R2",
+      "num": "2",
+      "x": 27.15,
+      "y": 44.5,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED2_A",
+      "name": "2"
+    },
+    {
+      "ref": "R9",
+      "num": "1",
+      "x": 36.35,
+      "y": 44.5,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "+5V",
+      "name": "1"
+    },
+    {
+      "ref": "R9",
+      "num": "2",
+      "x": 38.65,
+      "y": 44.5,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED3_A",
+      "name": "2"
+    },
+    {
+      "ref": "R3",
+      "num": "1",
+      "x": 28.85,
+      "y": 13.8,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED1_PWM",
+      "name": "1"
+    },
+    {
+      "ref": "R3",
+      "num": "2",
+      "x": 31.15,
+      "y": 13.8,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED1_GATE",
+      "name": "2"
+    },
+    {
+      "ref": "R4",
+      "num": "1",
+      "x": 28.85,
+      "y": 16.3,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED1_GATE",
+      "name": "1"
+    },
+    {
+      "ref": "R4",
+      "num": "2",
+      "x": 31.15,
+      "y": 16.3,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "2"
+    },
+    {
+      "ref": "R7",
+      "num": "1",
+      "x": 34.85,
+      "y": 13.8,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED2_PWM",
+      "name": "1"
+    },
+    {
+      "ref": "R7",
+      "num": "2",
+      "x": 37.15,
+      "y": 13.8,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED2_GATE",
+      "name": "2"
+    },
+    {
+      "ref": "R8",
+      "num": "1",
+      "x": 34.85,
+      "y": 16.3,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED2_GATE",
+      "name": "1"
+    },
+    {
+      "ref": "R8",
+      "num": "2",
+      "x": 37.15,
+      "y": 16.3,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "2"
+    },
+    {
+      "ref": "R10",
+      "num": "1",
+      "x": 40.85,
+      "y": 13.8,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED3_PWM",
+      "name": "1"
+    },
+    {
+      "ref": "R10",
+      "num": "2",
+      "x": 43.15,
+      "y": 13.8,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED3_GATE",
+      "name": "2"
+    },
+    {
+      "ref": "R11",
+      "num": "1",
+      "x": 40.85,
+      "y": 16.3,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED3_GATE",
+      "name": "1"
+    },
+    {
+      "ref": "R11",
+      "num": "2",
+      "x": 43.15,
+      "y": 16.3,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "2"
+    },
+    {
+      "ref": "C1",
+      "num": "1",
+      "x": 25.5,
+      "y": 40.050000000000004,
+      "w": 1.5,
+      "h": 1.3,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "+5V",
+      "name": "1"
+    },
+    {
+      "ref": "C1",
+      "num": "2",
+      "x": 25.5,
+      "y": 42.35,
+      "w": 1.5,
+      "h": 1.3,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "2"
+    },
+    {
+      "ref": "C2",
+      "num": "1",
+      "x": 25.5,
+      "y": 36.15,
+      "w": 1.5,
+      "h": 1.3,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "+5V",
+      "name": "1"
+    },
+    {
+      "ref": "C2",
+      "num": "2",
+      "x": 25.5,
+      "y": 38.449999999999996,
+      "w": 1.5,
+      "h": 1.3,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "2"
+    },
+    {
+      "ref": "C3",
+      "num": "1",
+      "x": 21.85,
+      "y": 5,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "+5V",
+      "name": "1"
+    },
+    {
+      "ref": "C3",
+      "num": "2",
+      "x": 24.15,
+      "y": 5,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "2"
+    },
+    {
+      "ref": "C4",
+      "num": "1",
+      "x": 25.85,
+      "y": 5,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "+5V",
+      "name": "1"
+    },
+    {
+      "ref": "C4",
+      "num": "2",
+      "x": 28.15,
+      "y": 5,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "2"
+    },
+    {
+      "ref": "C5",
+      "num": "1",
+      "x": 22.85,
+      "y": 25.8,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "+5V",
+      "name": "1"
+    },
+    {
+      "ref": "C5",
+      "num": "2",
+      "x": 25.15,
+      "y": 25.8,
+      "w": 1.3,
+      "h": 1.5,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "GND",
+      "name": "2"
+    },
+    {
+      "ref": "D1",
+      "num": "1",
+      "x": 13.35,
+      "y": 46.735,
+      "w": 1.3,
+      "h": 1.9,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED1_A",
+      "name": "A"
+    },
+    {
+      "ref": "D1",
+      "num": "2",
+      "x": 15.2,
+      "y": 46.735,
+      "w": 1.9,
+      "h": 1.9,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED1_RETURN",
+      "name": "K"
+    },
+    {
+      "ref": "D2",
+      "num": "1",
+      "x": 24.849999999999998,
+      "y": 46.735,
+      "w": 1.3,
+      "h": 1.9,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED2_A",
+      "name": "A"
+    },
+    {
+      "ref": "D2",
+      "num": "2",
+      "x": 26.7,
+      "y": 46.735,
+      "w": 1.9,
+      "h": 1.9,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED2_RETURN",
+      "name": "K"
+    },
+    {
+      "ref": "D3",
+      "num": "1",
+      "x": 36.35,
+      "y": 46.735,
+      "w": 1.3,
+      "h": 1.9,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED3_A",
+      "name": "A"
+    },
+    {
+      "ref": "D3",
+      "num": "2",
+      "x": 38.199999999999996,
+      "y": 46.735,
+      "w": 1.9,
+      "h": 1.9,
+      "drill": 0,
+      "shape": "RECT",
+      "layer": 1,
+      "net": "LED3_RETURN",
+      "name": "K"
+    }
+  ],
+  "holes": [
+    [
+      3,
+      3,
+      2.2
+    ],
+    [
+      49,
+      3,
+      2.2
+    ],
+    [
+      3,
+      49,
+      2.2
+    ],
+    [
+      49,
+      49,
+      2.2
+    ]
+  ],
+  "keepouts": [
+    [
+      3,
+      11.5,
+      26.4,
+      23.9
+    ],
+    [
+      30.4,
+      36.4,
+      42.4,
+      43.4
+    ]
+  ]
+}

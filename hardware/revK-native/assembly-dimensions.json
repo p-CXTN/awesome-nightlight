@@ -1,0 +1,44 @@
+{
+  "pcb_revision": "K",
+  "board_size": [
+    52,
+    52,
+    1.6
+  ],
+  "case_board_offset": [
+    3,
+    3
+  ],
+  "board_rear_z": 3.0,
+  "body_depth": 11.5,
+  "supermini_standoff": 0.2,
+  "supermini_total_thickness": 4.0,
+  "supermini_usb_overhang": 1.3,
+  "radar_standoff": 1.8,
+  "radar_pcb_thickness": 1.6,
+  "radar_underside_projection": 1.5,
+  "radar_front_projection": 0.9,
+  "gy302_standoff": 0.3,
+  "gy302_total_thickness": 2.1,
+  "usb_shell": [
+    12,
+    4.5
+  ],
+  "usb_projection_from_board": [
+    18.7,
+    18.8
+  ],
+  "supermini_rotation_degrees": 180,
+  "usb_rotation_degrees": 0,
+  "unholed_supports": [],
+  "module_side": "front",
+  "radar_wire_top_above_carrier": 4.5,
+  "gy302_wire_top_above_carrier": 2.7,
+  "rear_only_supports": [],
+  "mount_support_radii": [
+    2.2,
+    2.2,
+    2.2,
+    2.2
+  ]
+}

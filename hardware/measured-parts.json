@@ -1,0 +1,141 @@
+{
+  "units": "mm",
+  "supermini": {
+    "source": "physical measurements supplied by owner",
+    "body_width": 18.0,
+    "body_length": 22.4,
+    "overall_length_including_usb_c": 23.7,
+    "usb_c_overhang_derived": 1.3,
+    "overall_thickness": 4.0,
+    "underside": "flat",
+    "holes_per_row": 8,
+    "first_to_last_hole_centre_measured_range": [
+      17.7,
+      17.8
+    ],
+    "nominal_pitch_inferred": 2.54,
+    "hole_row_centre_separation": 16.0,
+    "usb_c_end_pcb_edge_to_first_hole_centre_approx": 1.6,
+    "assembly_method": "side soldering to carrier lands",
+    "edge_contacts": "Owner reports A-shaped holes open to the side edge.",
+    "carrier_land_requirement": "Provide exposed copper beyond module edges for side soldering; preserve measured module hole geometry independently of carrier land centres.",
+    "pending_verification": [
+      "Physical solder-land overlap and accessibility",
+      "Actual antenna extent and RF performance"
+    ],
+    "integration_status": "PCB Rev K. Independent checks pass; native EDA release and physical fit remain pending.",
+    "pin_orientation_reference": "https://nuttx.apache.org/docs/latest/platforms/risc-v/esp32c3/boards/esp32c3-supermini/index.html"
+  },
+  "ld2410c": {
+    "source": "Hi-Link HLK-LD2410C User Manual V1.00 for nominal outline, pitch and hole diameter; owner measurements for component heights",
+    "body_width": 22.0,
+    "body_height": 16.0,
+    "pin_count": 5,
+    "pitch_measured_approx": 2.5,
+    "upper_edge_to_pin_row_centre_approx": 1.5,
+    "side_edge_to_first_pin_centre_measured_approx": 5.6,
+    "side_edge_to_first_pin_centre_if_centred_at_nominal_pitch": 5.92,
+    "pcb_thickness": 1.6,
+    "reported_board_to_solder_side_total": 3.1,
+    "reported_board_to_sensor_side": 2.5,
+    "height_datum_status": "Both side totals include PCB thickness.",
+    "antenna": "Directly on module PCB",
+    "edge_contacts": "Closed holes without side openings",
+    "proposed_assembly_method": "Five formed approximately 0.5 mm solid-wire leads through module holes to exposed front carrier SMD lands; both joints accessible from front.",
+    "pending_verification": [
+      "Physical fit of soldered pins at nominal 1.5 mm edge offset; measurement uncertainty approximately 0.2 mm"
+    ],
+    "integration_status": "PCB Rev K. Independent checks pass; native EDA release and physical fit remain pending.",
+    "official_manual_url": "https://www.elemon.com.ar/images/productos/hojas-de-datos/radar-modulos/hlk-ld2410c.pdf",
+    "body_height_measured": 15.8,
+    "nominal_pitch": 2.54,
+    "module_hole_diameter": 0.9,
+    "manual_measurement_uncertainty_approx": 0.2,
+    "underside_component_projection_derived": 1.5,
+    "sensor_side_component_projection_derived": 0.9,
+    "overall_envelope_thickness_derived": 4.0,
+    "overall_envelope_note": "Bounding envelope derived from opposite-side maxima; not a directly measured local thickness. Components do not overlap.",
+    "nominal_upper_edge_to_pin_row_used": 1.5,
+    "upper_edge_offset_source": "Owner measurement; manufacturer drawing does not dimension this offset.",
+    "selected_standoff": 1.8
+  },
+  "gy302": {
+    "source": "physical measurements supplied by owner",
+    "body_length": 18.7,
+    "body_width": 14.2,
+    "nominal_pitch": 2.54,
+    "underside": "flat",
+    "overall_thickness": 2.1,
+    "pin_row_to_short_edge_approx": 1.0,
+    "vcc_pin_centre_to_adjacent_edge_approx": 2.2,
+    "sensor_centre_to_edge_opposite_pin_row_approx": 6.8,
+    "pending_verification": [
+      "Physical assembly and optical isolation; aperture spans full board height to accommodate unspecified sensor coordinate along the header direction"
+    ],
+    "integration_status": "PCB Rev K. Independent checks pass; native EDA release and physical fit remain pending.",
+    "addr_pin_centre_to_adjacent_edge_approx": 1.8,
+    "edge_contacts": "Closed through-holes; no side openings",
+    "nominal_first_to_last_pin_span": 10.16,
+    "end_margin_consistency_residual": 0.04,
+    "proposed_assembly_method": "Five formed approximately 0.5 mm solid-wire leads through module holes to exposed front carrier SMD lands; both joints accessible from front.",
+    "selected_standoff": 0.3
+  },
+  "led": {
+    "geometry_source": "Existing Rev G LED footprint",
+    "body_length": 3.2,
+    "body_width": 2.47,
+    "instruction": "Retain existing scheme and land pattern; physical LED measurements unavailable.",
+    "physical_fit_verified": false
+  },
+  "usb_a": {
+    "source": "physical measurements supplied by owner",
+    "requested_case_opening": [
+      12.1,
+      4.6
+    ],
+    "board_to_tip_distance_range": [
+      18.7,
+      18.8
+    ],
+    "outermost_electrical_pin_centre_span": 7.2,
+    "outermost_electrical_pin_outside_span": 7.5,
+    "electrical_pin_count": 4,
+    "mounting_feature_description": "Two shell mounting legs flanking the electrical contacts, one on each narrow side.",
+    "reported_mounting_feature_spacing": 12.0,
+    "pending_verification": [],
+    "integration_status": "PCB Rev K. Independent checks pass; native EDA release and physical fit remain pending.",
+    "metal_shell_cross_section": [
+      12.0,
+      4.5
+    ],
+    "case_opening_clearance_basis": "0.1 mm total per dimension; 0.05 mm per side nominal",
+    "board_to_tip_datum": "PCB surface to plug tip, connector end adjacent to PCB",
+    "mounting_tab_to_contact_row_offset": 0.0,
+    "data_pin_treatment": "Trim D+ and D- pins; remaining ends may contact only a dedicated insulating PCB area.",
+    "data_pin_landing_requirement": "Rear copper and all vias excluded beneath trimmed data tails. Front-only SMD copper may lie across the 1.6 mm insulating carrier.",
+    "reference_photo": "Owner reference photo (not distributed)",
+    "photo_observations": [
+      "Solder-end view shows four electrical tails and two shell mounting legs, one on each narrow side.",
+      "Shell legs appear bent outward; their final solder landing positions are not established by shell width alone.",
+      "No VBUS or GND markings visible."
+    ],
+    "polarity_reference": "Owner-confirmed solder-end photo view: left outer electrical contact is +5V; right outer electrical contact is GND.",
+    "contact_row_placement": "Electrical contact row centred in both axes of the 12 x 4.5 mm shell end face.",
+    "power_contact_coordinates_in_photo_view": {
+      "origin": "shell end-face centre",
+      "x_direction": "right in reference photo",
+      "y_direction": "up in reference photo",
+      "VBUS": [
+        -3.6,
+        0.0
+      ],
+      "GND": [
+        3.6,
+        0.0
+      ]
+    },
+    "assembly_adjustment": "Electrical connector pins will be straightened during soldering.",
+    "shell_mounting_land_requirement": "Provide generous exposed solder lands outside both narrow shell sides for manually fitted shell legs; do not require precision tab holes or exact tab dimensions. Maintain isolation from VBUS and other non-shell nets.",
+    "dimensional_policy": "Use supplied shell and contact dimensions; accommodate mounting-leg variation with solder land area. No further precise tab measurements requested."
+  }
+}
